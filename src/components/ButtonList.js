@@ -25,7 +25,7 @@ const ButtonList = () => {
     "Football10",
   ];
   return (
-    <div className="flex w-[85%] flex-nowrap overflow-x-scroll">
+    <div className="flex flex-nowrap overflow-x-scroll">
       {buttons.map((button) => (
         <Button key={button} name={button} />
       ))}
