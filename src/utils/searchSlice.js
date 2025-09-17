@@ -5,7 +5,6 @@ const searchSlice = createSlice({
   initialState: {},
   reducers: {
     chacheResults: (state, action) => {
-      console.log(action.payload);
       state = Object.assign(state, action.payload);
     },
   },
