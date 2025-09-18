@@ -3,6 +3,7 @@ import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MaintainContainer from "./components/MaintainContainer";
 import WatchPage from "./components/WatchPage";
+import Demo from "./components/Demo";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -15,8 +16,12 @@ function App() {
           Component: MaintainContainer,
         },
         {
-          path: "/watch",
+          path: "watch",
           Component: WatchPage,
+        },
+        {
+          path: "demo",
+          Component: Demo,
         },
       ],
     },
